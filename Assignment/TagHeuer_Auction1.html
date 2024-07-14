@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Vanzstyles.css">
+    <link rel="stylesheet" href="Navigationbar.css">
+    <title>Vanz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-gallery img {
+            width: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .main-image {
+            flex: 2;
+            padding-left: 20px;
+        }
+        .main-image img {
+            width: 100%;
+        }
+        .details {
+            padding-left: 20px;
+            flex: 1;
+        }
+        .details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .details p {
+            margin: 10px 0;
+        }
+        .details .estimate {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .details .actions {
+            margin-top: 20px;
+        }
+        .details .actions button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .details .actions button:hover {
+            background-color: #45a049;
+        }
+        .details .actions .follow, .details .actions .share {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">V4NZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Auction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <form class="d-flex" onsubmit="handleSearch(event)">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <br>
+    <div class="container">
+        <div class="main-image">
+            <img src="https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwd239f6de/TAG_Heuer_Aquaracer/WBP2151.FT6199/WBP2151.FT6199_0913.png?impolicy=pdpGallery&width=1920&height=1440" alt="Main Image">
+        </div>
+        <div class="details">
+            <h2>AQUARACER PROFESSIONAL 200</h2>
+            <p>40mm, Steel and Gold</p>
+            <p class="estimate">Estimate: 20,000rm</p>
+            <p>Registration closes: 3 days</p>
+            <p>Bidding starts: 3 days</p>
+            <div class="actions">
+                <a href="Payment.html">
+                    <button>Place Bid</button>
+                    </a>
+            </div>
+            <p><strong>Description:</strong></p>
+            <p>A high performance dive watch renowed by its robust design and engineering. Features a rotating bezel, luminous markers and water resistance up to 300 meters. It has a scratch-resistant sapphire crystal stainless steel case.</p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="Searching.js"></script>
+</html>

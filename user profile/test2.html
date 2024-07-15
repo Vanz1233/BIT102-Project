@@ -1,0 +1,148 @@
+<head>
+    <title>Communications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <style>
+        /* Your existing CSS can go here, or you can link to an external file */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Vanz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Auctions">Auction</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Location">Locations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="profile-info">
+            <img src="a-hauntingly-beautiful-and-intricate-manga-illustr-7byAcpN4RSuod1g-S1tZwQ-ZPpqy0C4QWeSQ5s2iDe7nQ-cover.jpeg" alt="Profile Picture">
+            <h1>Qi Yuan Ooi</h1>
+        </div>
+        <div class="navbar-custom">
+            <a href="#">BUYING</a>
+            <a href="#">SELLING</a>
+            <a href="#">SETTINGS</a>
+        </div>
+    </div>
+    <div class="column">
+        <div class="topnav" id="myTopnav">
+         <a href="#home" class="active">Details</a>
+         <a href="#news">Communications</a>
+       
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div> </div>
+
+    <div class="container">
+        <form id="preferencesForm">
+            <!-- Emails Section -->
+            <div class="preferences-section col">
+                
+                <div class="container-fluid col"> <p>Emails</p> </div> 
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="emailPreferences" id="emailYes" value="yes" checked>
+                    <label class="form-check-label" for="emailYes">
+                        <p1 class="email-preference-header">Send me emails for the following:</p1>
+                    </label>
+                </div>
+                <div id="emailOptions">
+                    <div class="form-check">
+                        <input class="form-check-input email-checkbox" type="checkbox" id="auctionUpdates" value="auctionUpdates" checked>
+                        <label class="form-check-label" for="auctionUpdates">
+                            <p>Auction and Private Sale Updates </p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input email-checkbox" type="checkbox" id="eventInvitations" value="eventInvitations" checked>
+                        <label class="form-check-label" for="eventInvitations">
+                            <p>Event Invitations </p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input email-checkbox" type="checkbox" id="ArtNews" value="ArtNews" checked>
+                        <label class="form-check-label" for="ArtNews">
+                          <p> Art News </p>
+                        </label>
+                    </div>
+                    <!-- Add other checkboxes similarly -->
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="emailPreferences" id="emailNo" value="no">
+                    <label class="form-check-label" for="emailNo">
+                        <p>Do not send me emails </p>
+                    </label>
+                    <br>
+                    <div class="inform">  <p1> We will never pass your personal information to anyone outside of Christie’s for use for their own marketing purposes without your consent. You can unsubscribe at any time.</p1></div>
+                   
+                </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="preferences-section">
+                <button type="button" class="btn btn-secondary" id="cancelButton">Cancel</button>
+                <button type="submit" class="btn btn-primary" id="saveButton">Save Preferences</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to enable/disable email checkboxes
+            function toggleEmailCheckboxes(enable) {
+                $('#emailOptions .email-checkbox').prop('disabled', !enable);
+                if (!enable) {
+                    $('#emailOptions .email-checkbox').prop('checked', false);
+                }
+            }
+
+            // Initial state
+            toggleEmailCheckboxes($('#emailYes').is(':checked'));
+
+            // Handle email radio button change
+            $('input[name="emailPreferences"]').change(function() {
+                toggleEmailCheckboxes($('#emailYes').is(':checked'));
+            });
+
+            $('#preferencesForm').on('submit', function(e) {
+                e.preventDefault();
+                // Handle form submission
+                alert('Preferences saved!');
+            });
+
+            $('#cancelButton').on('click', function() {
+                // Handle form cancellation
+                alert('Changes canceled.');
+            });
+        });
+    </script>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+
+</html>

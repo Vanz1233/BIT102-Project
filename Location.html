@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="location.css">
+</head>
+<body>
+
+    <!-- Sign-Up Bar -->
+    <div class="fixed-top">
+        <div class="signup-bar">
+            <a href="#" class="signup-link" onclick="document.getElementById('loginModal').style.display='block'">Sign In</a>
+        </div>
+    
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content animate">
+                <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+                <form class="login-form">
+                    <h2>Login</h2>
+    
+                    <div class="information">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+    
+                    <button type="submit">Login</button>
+                    <div class="remember">
+                        <label><input type="checkbox"> Remember Me</label>
+                        <a href="#"> Forgot Password?</a>
+                    </div>
+                    <hr>
+    
+                    <p>You don't have account? <a href="signUp.html">Sign-Up</a></p>
+                </form>
+            </div>
+        </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">V4NZ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Auction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Private Sales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav>
+        </div>
+
+    <div class="Banners">
+        <img src="wallpaperflare.com_wallpaper.jpg" alt="map" class="banner-image" >
+     </div>
+  
+
+    <div class="Location-header">
+        <h1>Locations</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <div class="Location-information">
+                <p>Vanz is a young and global timepiece business that specializes in collecting and selling world-class and legendary craftsmanship of watches by collaborating directly with collectors and experienced specialists who are excellent in the field.</p>
+                <br><br>
+                <p>Our humble company is headquartered in the capital city of Kuala Lumpur, with our advanced website and state-of-the-art online bidding system, providing convenience for customers to buy and sell with us anytime and anywhere.</p>
+            </div>
+        </div>
+
+        <div class="location-image col-5">
+            <img class="img-fluid rounded float-end" src="officetrx.jpg" alt="office">
+        </div>
+    </div>
+
+    <div class="address">
+        <h6><strong>Headquarter gallery location</strong></h6>
+        <p>22, Jalan P. Ramlee, Kuala Lumpur, 50250 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia.</p>
+    </div>
+
+    <div class="map">
+        <div id="map"></div>
+
+        <div class="map">
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7637157613885!2d101.70696777501871!3d3.1568859968184877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d662b6c2e1%3A0x65bec2112d819bd1!2s22%2C%20Jalan%20P.%20Ramlee%2C%20Kuala%20Lumpur%2C%2050250%20Kuala%20Lumpur%2C%20Wilayah%20Persekutuan%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1718527610756!5m2!1sen!2smy&zoomControl=true&scrollwheel=true" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+          </div>
+
+
+    </iframe>
+
+
+    <div class="Footer">
+        <div class="heading-row"style="text-align: center; color: black ";>
+            <div class="heading-item" style="text-align: center; text-decoration: none;">
+                <h2>Help</h2>
+                <p><a href="aboutus/FAQ.html">FAQ</a></p>
+            </div>
+            <div class="heading-item" style="text-decoration:none; color: black";> 
+                <h2>About us</h2>
+                <p><a href="aboutus/bootstrap AboutUs.html">about Van'z</a></p>
+                <p><a href="Location.html">location</a></p>
+                <p><a href="aboutus/Gallery.html">Gallery</a></p>
+            </div>
+            <div class="heading-item">
+                <h2>Services</h2>
+                <p><a href="Services/Valuation.html">watch valuation</a></p>
+                <p><a href="Services/reparation.html">watch maintenances and reparation</a></p>
+                <p><a href="Services/clientadvisory.html">client advisory</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social-icons">
+                <a href="#"><img src="https://i.pinimg.com/originals/84/68/5b/84685ba9637a951591040426a46da70f.jpg"
+                        alt="Facebook" width="30"></a>
+                <a href="#"><img
+                        src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Instagram-logo-transparent-PNG.png"
+                        alt="Instagram" width="30"></a>
+                <a href="#"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7io1s90U_HD_3X4PLf_eY0loEO5PGGMlZSQ&s"
+                        alt="Google" width="30"></a>
+                <a href="#"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/weibo_black_logo_icon_147051.png"
+                        alt="Weibo" width="30"></a>
+                <a href="#"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KbwtKBVMBeaVklIsVLLP_9POocvzTbn-xA&s"
+                        alt="X" width="30"></a>
+            </div>
+    </div>
+
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="location.js"></script>
+</body>

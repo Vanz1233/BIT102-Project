@@ -1,0 +1,110 @@
+html {}
+
+.Location-header h1  {font-size: 48px;
+    background-color:gainsboro;
+    font-family: "Playfair Display", serif;
+    
+
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icons a {
+    margin: 0 10px;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    background-color:beige;
+}
+.footer a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    margin: 0 10px;
+   
+}
+.Footer a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+}
+.heading-row a{ color:black;
+font-size: 18px;}
+
+.Contact {
+    font-size: 44px;
+    font-weight: 600;
+    text-wrap:pretty;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    padding: 10px 5px 10px;
+    
+    
+
+
+ }
+
+ .info { 
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom:10px;
+    height: 350px;
+
+    ;
+}
+
+
+
+.subtitle p {
+    padding-top: 60px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 34px;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+   
+
+}
+
+.card-body { 
+    font-size: 25px ;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 15px;
+    text-align: justify;
+    padding-top: 18px;
+
+
+}
+button.accordion-button {
+    font-size: 26px;
+    font-weight: 550;
+    font-family: "Roboto", sans-serif ;
+
+
+}
+
+.banner img {
+    width: 100%;
+    height:auto;
+  }
+
+  @media (min-width: 1024px) {
+    .banner img {
+      height: 900px; /* Adjust this value as needed */
+      object-fit: cover; /* Ensures the image covers the defined height */
+    }
+  }
+
+  .h4, h4 { font-size:32px ;}

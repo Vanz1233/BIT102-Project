@@ -1,0 +1,129 @@
+@keyframes enlargeOnly {
+    0% {
+        width: 100px;
+        height: 100px;
+        transform: scale(1); /* No enlarge */
+    }
+    30% {
+        width: 150px;
+        height: 150px;
+        transform: scale(1.5); /* Enlarge to 1.5 times */
+    }
+    70% {
+        width: 150px;
+        height: 150px;
+        transform: scale(1.5); /* Maintain enlarged size */
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        transform: scale(1); /* Back to original size */
+    }
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    /* Ensuring the background color is visible */
+    animation: enlargeOnly 3s infinite; /* Animation lasts 3 seconds and repeats infinitely */
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container properly */
+}
+
+.invoice {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 800px;
+    min-height: 400px; /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+}
+
+.title { font-size:}
+.invoice .head {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+    
+}
+
+.invoice .body {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1; /* Ensure the body takes up remaining space */
+    font-family: 'Poppins';
+}
+
+
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.toast-custom {
+    width: 100%; /* Make the toast full width */
+    max-width: 500px; /* Set a maximum width */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    animation: slideInRight 0.5s forwards; /* Animation duration and direction */
+}
+
+.toast-custom .toast-body {
+    padding: 30px; /* Increase padding for better readability */
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+/* Styles for the button to make it larger and center it */
+.btn-primary {
+    font-size: 1.5rem; /* Increase font size */
+    padding: 10px 20px; /* Increase padding */
+    display: block; /* Make button a block element */
+    width: 100%; /* Make button full width */
+    max-width: 200px; /* Set maximum width */
+    margin: 20px auto; /* Center button horizontally and add margin */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    opacity: 0.9;
+  transition: 0.4s;
+background-color: black		;
+
+}
+
+.btn-primary:hover {
+    opacity:0.9;
+    background-color:#B2BEB5;
+}
+
+/* Increase padding and margin for the text */
+.invoice .body p1 {
+    font-size: 19px;
+    padding-bottom: 1em;
+    margin-bottom: 2em; /* Increase margin-bottom to separate it from the button */
+    font-family: 'Poppins';
+    
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .toast-custom {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+}

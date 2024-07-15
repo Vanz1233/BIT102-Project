@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    white-space: nowrap;
+    background-color: #ffffff;
+}
+.card {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2);
+    transition: 0.3s;
+    width: 300px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(175, 175, 175);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.text-container {
+    padding: 20px;
+}
+.text-container h4 {
+    margin: 10px 0;
+}
+.text-container p {
+    color: #555;
+}
+hr {
+    border: 1px solid #ddd;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.filter, .content {
+    margin: 20px;
+}
+.filter {
+    flex: 1;
+    min-width: 200px;
+}
+.filter-section {
+    margin-bottom: 20px;
+}
+.filter-section h3 {
+    margin-bottom: 10px;
+}
+.filter-section ul {
+    list-style: none;
+    padding: 0;
+}
+.filter-section ul li {
+    margin-bottom: 5px;
+}
+.filter-section select {
+    width: 100%;
+    padding: 5px;
+}
+.filter-container {
+    display: flex;
+    padding: 20px;
+}
+.content {
+    flex: 3;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.heading h2 {
+    margin: 0;
+}
+.heading a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.auction-list {
+    list-style: none;
+    padding: 0;
+}
+.auction-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.auction-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+.auction-item .details {
+    flex: 1;
+}
+.auction-item .details h3 {
+    margin: 0 0 10px 0;
+}
+.auction-item .details p {
+    margin: 0 0 10px 0;
+}
+.auction-item .details a {
+    text-decoration: none;
+    color: #000;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.image-row {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 10px; /* Adds space between images */
+}
+.image-item {
+    text-align: center;
+}
+.image-row img {
+    width:200px;
+    height: auto;
+}
+.image-item a {
+    text-decoration: none;
+    color: black;
+}
+.heading-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.heading-row h1 {
+    margin: 0;
+}
+.heading-item {
+    padding: 20px;
+}
+.heading-item h1 {
+    margin: 0;
+}
+.heading-item a {
+    text-decoration: none;
+    color:black
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icons a {
+    margin: 0 10px;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+  .sale-overview {
+    padding: 20px;
+}
+
+.sale-details {
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.top-nav span {
+    margin-left: auto;
+    color: gray;
+}

@@ -1,15 +1,16 @@
-
 /* Adjusted sign-up bar */
 .signup-bar {
     background-color: #000000; /* Dark background */
     padding: 10px 20px; /* Padding around the sign-up link */
     text-align: right; /* Align text to the right */
+    z-index: 1000;
 }
 
 .signup-bar .signup-link {
     color: #fff; /* White text color */
     text-decoration: none;
     font-weight: 500;
+    z-index: 1;
 }
 
 .signup-bar .signup-link:hover {
@@ -90,6 +91,14 @@
 .login-form {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+/* Align labels to the left */
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px; /* Optional: Adds some space below the labels */
 }
   
 .login-form input[type="text"],
@@ -114,4 +123,45 @@
   
 .login-form button:hover {
     background-color: #0ddede;
+}
+
+/* Align the remember me section to the left */
+.remember {
+    text-align: left;
+    margin-top: 10px; /* Optional: Adds some space above the checkbox */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+}
+
+.remember input[type="checkbox"] {
+    margin-right: 5px; /* Optional: Adds space between the checkbox and the label text */
+}
+
+/* Optional: Style for "Forgot Password?" link */
+.remember a {
+    margin-left: 10px; /* Adds some space between the checkbox and the link */
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.login-form button :hover {
+    background-color: #0ddede;
+}
+
+.remember a {
+    margin-left: 10px; /* Adds some space between the checkbox and the link */
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Hover effect for "Forgot Password?" link */
+.remember a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker shade for hover effect */
 }

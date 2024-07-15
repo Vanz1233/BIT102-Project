@@ -1,0 +1,182 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-image: url(backgroundvid.mp4.mp4);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area while maintaining aspect ratio */
+    opacity: 0.8;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Example overlay */
+    z-index: -1;
+}
+
+.signup-form-container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Allow scrolling */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.signup-form-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    backdrop-filter: blur(18px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    color: #f9f3f3;
+}
+
+.signup-form label {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #a9e5f5;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="email"],
+.signup-form input[type="date"],
+.signup-form select.title-select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Custom styles for the title select dropdown */
+.signup-form select.title-select {
+    background: white;
+    color: #999;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.currency-input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.currency-input-group select.symbol {
+    font-size: 16px;
+    padding: 10px;
+    color: #999;
+    border: none;
+    background: white;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-right: 1px solid #ccc;
+}
+
+.currency-input-group input#amount {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+/* Custom styles for amount input inside the currency-input-group */
+.currency-input-group input#amount {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.signup-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+
+.signup-form p {
+    color: aliceblue;
+}
+
+.signup-form .login-link {
+    margin-top: 15px;
+    color: #d9e0e7;
+    text-decoration: none;
+}
+
+.signup-form .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signup-form {
+        padding: 15px;
+    }
+}

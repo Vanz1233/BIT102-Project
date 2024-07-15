@@ -1,0 +1,150 @@
+.pic1  {align-items: left;
+   
+   
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ; 
+ 
+    
+    }
+
+.info p { 
+    font-size: 26px;
+    font-family: 'Poppins'
+}
+
+.Specialist h6 {
+    font-size: 36px;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+.Specialist {
+    background-color:lightgrey;
+
+}
+
+.h2, h2 {
+     font-family:"Playfair Display";
+     font-weight: 500;
+     font-size: 25;
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 25px;
+    
+    }
+
+.Specialist p {
+    font-size: 24px;
+    margin-bottom: -5px;
+    font-family: poppins;
+    
+
+}
+
+.Specialist p1 {
+    font-size: 20px;
+     
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icons a {
+    margin: 0 10px;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    background-color:beige;
+    color: black;
+}
+.footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+   
+}
+.Footer a { 
+    text-decoration: none;
+    margin-left: 50px;
+    color: black;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+
+.nav-link { 
+    font-size: 20px;
+    color: black;
+}
+.contact li {
+     list-style: none;
+     font-size: 23px;
+     margin-top: 7px;
+     font-weight: 100;
+     font-family: roboto ;
+      
+}
+.contact ul {
+    padding-bottom: 30px;
+
+}
+
+.form p{ 
+    font-size: 26px;
+font-family: 'Roboto';
+
+
+}
+
+.mb-3 {
+    font-size: 26px;
+    font-family: Playfair Display; 
+    font-weight: 450;
+
+}
+
+.form-control { height: 50px;}
+.nav-tabs .nav-link { 
+    font-size: 20px; 
+    color: black;
+    font-family: Playfair Display;
+
+}
+
+.col-12 { 
+    margin-left: 15px;
+
+}
+
+.form-control { 
+    font-size: 22px;
+    font-family: "Poppins" ;
+    font-weight: 300;
+    
+}
+
+.btn { 
+    width: 120px;
+    height:45px ;
+    color:gainsboro;
+    font-family: Poppins;
+    font-weight: 500;
+    background-color:black;
+    font-size: 18px;
+}
+
+.btn:hover { 
+    background-color:lightgrey;
+    color:darkslategrey;
+}
+
+.nav-link { font-size: 20px;
+} 

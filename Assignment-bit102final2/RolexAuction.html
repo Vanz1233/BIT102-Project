@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Vanzstyles.css">
+    <link rel="stylesheet" href="Navigationbar.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">V4NZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Auction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <form class="d-flex" onsubmit="handleSearch(event)" action="searching.php">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <div class="top-nav">
+        <a href="#">AUCTION CALENDAR</a>
+        <span>7-20 JUN 2024 | ONLINE 10421</span>
+    </div>
+    <div class="container sale-overview">
+        <div class="sale-details">
+            <h1>Rare and vintage Watches Online: Featuring the Luxurious Collection by Rolex</h1>
+            <p><strong>Kuala Lumpur</strong></p>
+            <p>Sale Total: <strong>GBP 2,340,230</strong></p>
+        </div>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview"
+                    aria-selected="true">OVERVIEW</button>
+                <button class="nav-link" id="nav-lots-tab" data-bs-toggle="tab" data-bs-target="#nav-lots" type="button"
+                    role="tab" aria-controls="nav-lots" aria-selected="false">BROWSE LOTS</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+                <img
+                    src="https://www.shutterstock.com/shutterstock/videos/1071568057/thumb/1.jpg?ip=x480">
+                <h2><b></b>Sales Overview</h2>
+                <p>Rolex | Indulge in the ingenuity of the classic rolex watches</p>
+                <p>In the realm of luxury watches, a Rolex watch auction is a much-anticipated event that draws investors, collectors, and watch enthusiasts alike. 
+                    These auctions feature a wide range of Rolex models, from modern masterpieces to vintage favorites like the 
+                    Submariner and Daytona. Competitors place aggressive bids in person, over the phone, or 
+                    online in an effort to win a sought-after piece of watchmaking history. 
+                    The excitement of the bidding process mixed with the temptation of having a Rolex—which is 
+                    recognized for its accuracy, artistry, and classic design—makes these auctions especially thrilling. 
+                    A lot of the watches that are available are uncommon or limited edition, and they frequently appreciate in value over time, making them wise investments in addition to being status and elegance symbols.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-lots" role="tabpanel" aria-labelledby="nav-lots-tab">
+                <div class="scroll-container">
+                    <div class="card">
+                        <a href="Rolex1.html">
+                            <img src="https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-grid/c_limit,w_240/v1/catalogue/2024/upright-bba-with-shadow/m136668lb-0001"
+                                alt="Avatar">
+                            <div class="text-container">
+                                <h7><b>Rolex</b></h7>
+                                <br>
+                                <h7>DEEPSEA</h7>
+                                <br>
+                                <p>44mm,Yellow Gold</p>
+                                <p>Est:256,000rm</p>
+                                <p>Lot 1</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="Rolex2.html">
+                            <img src="https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-grid/c_limit,w_240/v1/catalogue/2024/upright-bba-with-shadow/m128348rbr-0068"
+                                alt="Avatar">
+                            <div class="text-container">
+                                <h7><b>Rolex</b></h7>
+                                <br>
+                                <h7>Day-Date 36</h7>
+                                <br>
+                                <p>36mm,Yellow Gold</p>
+                                <p>and diamonds</p>
+                                <p>Est:230,000rm</p>
+                                <p>Lot 2</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="Rolex3.html">
+                            <img src="https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-grid/c_limit,w_240/v1/catalogue/2024/upright-bba-with-shadow/m52506-0002"
+                                alt="Avatar">
+                            <div class="text-container">
+                                <h7><b>Rolex</b></h7>
+                                <br>
+                                <h7>1908</h7>
+                                <br>
+                                <p>39mm,Platinum</p>
+                                <p>Est:133,000rm</p>
+                                <p>Lot 3</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="Rolex4.html">
+                            <img src="https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-grid/c_limit,w_240/v1/catalogue/2024/upright-bba-with-shadow/m126598tbr-0001"
+                                alt="Avatar">
+                            <div class="text-container">
+                                <h7><b>Rolex</b></h7>
+                                <br>
+                                <h7>COSMOGRAPH</h7>
+                                <br>
+                                <h7>DAYTONA</h7>
+                                <br>
+                                <p>40mm,Gold and</p>
+                                <p>Diamonds</p>
+                                <p>Est:256,000rm</p>
+                                <p>Lot 4</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="Rolex5.html">
+                            <img src="https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-grid/c_limit,w_240/v1/catalogue/2024/upright-bba-with-shadow/m279135rbr-0001"
+                                alt="Avatar">
+                            <div class="text-container">
+                                <h7><b>Rolex</b></h7>
+                                <br>
+                                <h7>Lady-DateJust</h7>
+                                <br>
+                                <p>28mm,Everose</p>
+                                <p>Gold</p>
+                                <p>Est:192,000rm</p>
+                                <p>Lot 5</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="Rolex6.html">
+                            <img src="https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-grid/c_limit,w_240/v1/catalogue/2024/upright-bba-with-shadow/m126603-0001"
+                                alt="Avatar">
+                            <div class="text-container">
+                                <h7><b>Rolex</b></h7>
+                                <br>
+                                <h7>Sea-Dweller</h7>
+                                <br>
+                                <p>43mm,Oystersteel</p>
+                                <p>Est:83,000rm</p>
+                                <p>Lot 6</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading-row">
+        <div class="heading-item">
+            <h2>Help</h2>
+            <p><a href="link1.html">FAQ</a></p>
+        </div>
+        <div class="heading-item">
+            <h2>About us</h2>
+            <p><a href="link2.html">about Van'z</a></p>
+            <p><a href="link3.html">location</a></p>
+            <p><a href="link4.html">Gallery</a></p>
+        </div>
+        <div class="heading-item">
+            <h2>Services</h2>
+            <p><a href="link5.html">watch valuation</a></p>
+            <p><a href="link6.html">watch maintenances and reparation</a></p>
+            <p><a href="link7.html">client advisory</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="https://i.pinimg.com/originals/84/68/5b/84685ba9637a951591040426a46da70f.jpg"
+                    alt="Facebook" width="30"></a>
+            <a href="#"><img
+                    src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Instagram-logo-transparent-PNG.png"
+                    alt="Instagram" width="30"></a>
+            <a href="#"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7io1s90U_HD_3X4PLf_eY0loEO5PGGMlZSQ&s"
+                    alt="Google" width="30"></a>
+            <a href="#"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/weibo_black_logo_icon_147051.png"
+                    alt="Weibo" width="30"></a>
+            <a href="#"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KbwtKBVMBeaVklIsVLLP_9POocvzTbn-xA&s"
+                    alt="X" width="30"></a>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="Searching.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+</html>

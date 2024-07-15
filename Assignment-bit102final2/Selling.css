@@ -1,0 +1,348 @@
+.banner {
+    position: relative;
+    background-image: url('wallpaperflare.com_wallpaper.jpg'); /* Background image for the banner */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.profile-info h1 {
+    margin: 10px 0 5px;
+    font-size: 28px;
+}
+
+.navbar-custom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: Poppins ;
+}
+
+.navbar-custom a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Roboto";
+   
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+
+    .profile-info img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info h1 {
+        font-size: 24px;
+    }
+
+    .navbar-custom a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 250px;
+    }
+
+    .profile-info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-info h1 {
+        font-size: 20px;
+    }
+
+    .navbar-custom a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+}
+
+.Footer {
+    position:relative;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding: 10px;
+    position: -ms-page;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 30px;
+    height: auto;
+    font-family: PlayfairDisplay ;
+}
+
+.tabcontent {
+    animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.2s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    font-family: Poppins ;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+}
+
+.button {
+    padding: 3rem 3rem;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #989898;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    width: 150px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #000000
+}
+
+.button:active {
+    background-color: #090808ae;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button p {
+    margin: 0; /* Remove margin to center vertically */
+
+
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+ 
+
+    
+  }
+
+  .navi a { font-size:21 px;}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #000000;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab button:hover {
+    text-decoration: underline;
+    background-color: #585858;
+    color:ghostwhite;
+
+ }
+
+.tab button { 
+    font-size: 24px;
+    font-weight: 450;
+    font-family: Playfair Display;
+    color:black;
+
+
+
+}
+.title {
+     font-size: 26px;
+     font-family:Roboto;
+     margin-left:25px ;
+}
+
+.title.p1 { font-family: Playfair Display;}
+
+.nav-link {
+     font-size: 22px;
+     color: black;
+    
+}
+
+.icon-btn {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 6px; /* Adjust padding for smaller screens */
+}
+
+.icon-container {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.social-icons {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+.social-icons a {
+margin: 0 10px;
+}
+.footer {
+text-align: center;
+padding: 10px;
+border-top: 1px solid #ddd;
+margin-top: 20px;
+background-color:beige;
+color: black;
+font-family: Poppins;
+
+}
+.footer a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+margin: 0 10px;
+text-align: center;
+font-family: Poppins;
+
+
+}
+.Footer a { 
+text-decoration: none;
+margin-left: 50px;
+color: black;
+font-size: 20px;
+font-family: Poppins;
+text-align: center;
+
+}
